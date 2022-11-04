@@ -1,0 +1,58 @@
+@media screen and (max-width: 700px) {
+  .App {
+    width: 100vw;
+    margin: 0;
+
+    .container {
+      width: 90%;
+    }
+  }
+  // TopButtons
+  .ant-btn > span {
+    display: inline-block;
+    font-size: 11px;
+  }
+
+  // Inputs
+  .inputBox {
+    .inputCity {
+      .ant-input {
+        min-width: 200px;
+      }
+    }
+  }
+
+  // Location
+  .location {
+    .city {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+  // TemperatureDetails
+  .bigDetails {
+    flex-direction: column;
+  }
+
+  .sunRise {
+    flex-direction: column;
+    padding: 1rem;
+
+    p {
+      padding: 0.5rem 0;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
+
+  // Forecast
+  .forecastTitle {
+    p {
+      font-size: 15px;
+    }
+  }
+}
