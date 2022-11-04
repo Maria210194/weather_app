@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-
 import { Input } from "antd";
 
-import "../style/style.scss";
-import "../style/query.scss";
 
 const Inputs = ({ setQuery }) => {
   const [city, setCity] = useState("");

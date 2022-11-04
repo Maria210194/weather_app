@@ -5,9 +5,6 @@ import { FiWind, FiSunset } from "react-icons/fi";
 import { BsFillSunFill } from "react-icons/bs";
 import { WiHumidity } from "react-icons/wi";
 
-import "../style/style.scss";
-import "../style/query.scss";
-
 import { formatDateToLocalTime, iconUrl } from "../services/weatherServices";
 
 function TemperatureDetails({

@@ -1,10 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-
 import { iconUrl } from "../services/weatherServices";
-
-import "../style/style.scss";
-import "../style/query.scss";
 
 function Forecast({ title, items }) {
   return (

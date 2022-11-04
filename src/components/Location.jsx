@@ -1,9 +1,6 @@
 import React from "react";
 
-import "../style/style.scss";
-import "../style/query.scss";
-
-function Location({ weather: { dt, timezone, name, country } }) {
+function Location({ weather: { name, country } }) {
   return (
     <>
       <div className="location">

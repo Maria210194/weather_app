@@ -4,7 +4,7 @@ import "antd/dist/antd.css";
 import { Layout } from "antd";
 const { Content } = Layout;
 
-import TopButtons from "./components/TopButtons";
+import Cities from "./components/Cities";
 import Inputs from "./components/Inputs";
 import Location from "./components/Location";
 import TemperatureDetails from "./components/TemperatureDetails";
@@ -13,7 +13,7 @@ import Forecast from "./components/Forecast";
 import getFormattedWeatherData from "./services/weatherServices";
 
 function App() {
-  const [query, setQuery] = useState({ q: "berlin" });
+  const [query, setQuery] = useState({ q: "barcellona" });
   const units = "metric";
   const [weather, setWeather] = useState(null);
 
@@ -31,7 +31,7 @@ function App() {
     <Layout className="App">
       <Content>
         <div className="container">
-          <TopButtons setQuery={setQuery} />
+          <Cities setQuery={setQuery} />
           <Inputs setQuery={setQuery} />
 
           {weather && (
