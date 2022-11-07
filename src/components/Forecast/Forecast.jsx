@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { iconUrl } from "../services/weatherServices";
+import { iconUrl } from "../../services/weatherServices";
+import "../Forecast/Forecast.scss";
 
 function Forecast({ title, items }) {
   return (

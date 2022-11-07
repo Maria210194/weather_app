@@ -1,4 +1,5 @@
 import React from "react";
+import "../Location/location.scss";
 
 function Location({ weather: { name, country } }) {
   return (

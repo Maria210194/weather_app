@@ -11,23 +11,33 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+// .App {
+//   min-height: 400px;
+//   width: 70vw;
+//   margin: 4% 0 10px 0;
+//   margin-inline: auto;
+//   background-color: #4a4e69;
+//   border-radius: 1%;
+
+//   .container {
+//     width: 60%;
+//     margin-inline: auto;
+//   }
+
+//   .ant-menu-item-selected::after {
+//     border-bottom: 2px solid #c9ada7 !important;
+//   }
+// }
+
 .App {
-  min-height: 400px;
-  width: 70vw;
-  margin: 4% 0 10px 0;
-  margin-inline: auto;
-  // background-image: linear-gradient(
-  //   to right,
-  //   #48bfe3,
-  //   #4ea8de,
-  //   #5e60ce,
-  //   #6930c3
-  // );
+  width: 100vw;
+  height: 100%;
+  margin: 0;
   background-color: #4a4e69;
   border-radius: 1%;
 
   .container {
-    width: 60%;
+    width: 90%;
     margin-inline: auto;
   }
 
@@ -36,204 +46,16 @@ body {
   }
 }
 
-// TopButtons
-.ant-menu-light .ant-menu-submenu-title {
-  color: white;
-}
-
-.ant-btn > span {
-  display: inline-block;
-  font-size: 15px;
-}
-
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after {
-  border-bottom: 2px solid #c9ada7 !important;
-}
-
-.cities {
-  padding-top: 2%;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-
-  .singleCity {
-    color: white;
-    border: none;
-    text-transform: uppercase;
-  }
-}
-
-// Inputs
-.inputBox {
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem 0;
-
-  .inputCity {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
+@media screen and (min-width: 600px) {
+  .App {
+    height: 700px;
+    width: 80vw;
+    margin: 4% 0 10px 0;
     margin-inline: auto;
 
-    .ant-input {
-      width: 100%;
-      padding: 0.5rem;
-      text-transform: capitalize;
-      border-radius: 10px;
-    }
-
-    .icons {
-      color: white;
-      cursor: pointer;
-      margin-left: 1rem;
-      font-size: 21px;
-      transition: ease-out;
-    }
-    :hover {
-      scale: 1.05;
-    }
-  }
-}
-
-// Location
-.locationBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem 0 0 0;
-
-  .locationAndTime {
-    color: white;
-    font-size: 1rem;
-    font-weight: lighter;
-  }
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.75rem 0;
-  padding-top: 1rem;
-
-  .city {
-    color: white;
-    font-size: 35px;
-    margin: 0;
-  }
-}
-
-// TemperatureDetails
-.detailsBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  font-size: 21px;
-  color: #9a8c98;
-}
-
-.bigDetails {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding-bottom: 1rem;
-
-  .gradesToday {
-    color: white;
-    font-size: 37px;
-    margin: 0;
-  }
-
-  .todayBox {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-  }
-  .todayInfo {
-    display: flex;
-    font-weight: lighter;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-      margin-right: 0.5rem;
-    }
-
-    .realFeel {
-      margin-left: 0.25rem;
-      font-weight: 500;
-    }
-  }
-}
-.sunRise {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 14px;
-  padding-bottom: 1rem;
-
-  p {
-    margin: 0;
-    padding-left: 1%;
-    font-size: 15px;
-  }
-
-  .separator {
-    color: white;
-    padding: 0 0.5rem;
-  }
-}
-
-// Forecast
-.forecastTitle {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 1rem;
-
-  p {
-    color: white;
-    font-size: medium;
-    text-transform: uppercase;
-    margin: 0;
-  }
-}
-
-.rowForecast {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  margin-bottom: 1rem;
-
-  .singleForecast {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem 0;
-
-    .timeForecast {
-      color: white;
-      font-size: small;
-      font-weight: 300;
-      margin: 0;
-    }
-
-    .imgWeather {
-      width: 2rem;
-    }
-
-    .degreeForecast {
-      color: white;
-      font-size: medium;
-      margin: 0.2rem 0;
+    .container {
+      width: 80%;
+      margin-inline: auto;
     }
   }
 }

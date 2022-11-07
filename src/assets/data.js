@@ -1,1 +1,0 @@
-export const cities = ["Barcelona", "Paris", "Rome", "Bali", "Tokyo"];

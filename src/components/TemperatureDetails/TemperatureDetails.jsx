@@ -1,11 +1,12 @@
 import React from "react";
+import "../TemperatureDetails/TemperatureDetails.scss";
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { FiWind, FiSunset } from "react-icons/fi";
 import { BsFillSunFill } from "react-icons/bs";
 import { WiHumidity } from "react-icons/wi";
 
-import { formatDateToLocalTime, iconUrl } from "../services/weatherServices";
+import { formatDateToLocalTime, iconUrl } from "../../services/weatherServices";
 
 function TemperatureDetails({
   weather: {
@@ -18,7 +19,6 @@ function TemperatureDetails({
     sunset,
     humidity,
     feels_like,
-    timezone,
     speed,
   },
 }) {

@@ -6,7 +6,7 @@ const { Content } = Layout;
 
 import Cities from "./components/Cities";
 import Inputs from "./components/Inputs";
-import Location from "./components/Location";
+import Location from "./components/Location/Location";
 import TemperatureDetails from "./components/TemperatureDetails";
 import Forecast from "./components/Forecast";
 
@@ -38,7 +38,7 @@ function App() {
             <div>
               <Location weather={weather} />
               <TemperatureDetails weather={weather} />
-              <Forecast items={weather.forecast} title="Daily forcast " />
+              <Forecast items={weather.forecast} title="Daily forecast " />
             </div>
           )}
         </div>

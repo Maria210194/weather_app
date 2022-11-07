@@ -1,6 +1,7 @@
 import React from "react";
+import "../Cities/cities.scss";
 import { Button, Menu } from "antd";
-import { cities } from "../assets/data";
+import { cities } from "../../cities";
 
 const Cities = ({ setQuery }) => (
   <Menu
